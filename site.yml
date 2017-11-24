@@ -1,4 +1,4 @@
-- hosts: workstation-1117.rhpds.opentlc.com
+- hosts: jumpbox
 #  become: yes
   roles:
      - create_network
