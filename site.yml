@@ -1,10 +1,12 @@
-- hosts: jumpbox
+- hosts: workstation-1117.rhpds.opentlc.com
 #  become: yes
   roles:
      - create_network
      - create_flavor
      - create_keypair
      - create-securitygroup
+     - osp-facts
+     - osp-instance
   tasks:
 ##Create Fronend Instance
   - name: Create frontend instance
